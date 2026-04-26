@@ -10,7 +10,11 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
-    "prettier": "prettier src --write"
+    "prettier": "prettier src --write",
+
+    "infra:synth": "cdk synth --app \"npx ts-node cdk/bin/cdk.ts\"",
+    "infra:deploy": "cdk deploy --app \"npx ts-node cdk/bin/cdk.ts\" --profile trainee --require-approval never",
+    "infra:destroy": "cdk destroy --app \"npx ts-node cdk/bin/cdk.ts\" --profile trainee --force"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

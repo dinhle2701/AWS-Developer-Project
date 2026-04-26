@@ -33,7 +33,7 @@ export default function Header() {
             underline="none"
             to="/"
           >
-            My Store!
+            My Store 🛒 AWS CLOUD DEVELOPER COURSE 2026Q2
           </Link>
         </Typography>
 
